@@ -1,0 +1,2084 @@
+@font-face {
+  font-family: 'Arimo';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Arimo-regular/Arimo-regular.eot');
+  src: url('/fonts/Arimo-regular/Arimo-regular.eot?#iefix') format('embedded-opentype'),
+       local('Arimo'),
+       local('Arimo-regular'),
+       url('/fonts/Arimo-regular/Arimo-regular.woff2') format('woff2'),
+       url('/fonts/Arimo-regular/Arimo-regular.woff') format('woff'),
+       url('/fonts/Arimo-regular/Arimo-regular.ttf') format('truetype'),
+       url('/fonts/Arimo-regular/Arimo-regular.svg#Arimo') format('svg');
+}
+
+@font-face {
+  font-family: 'Arimo';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/Arimo-700/Arimo-700.eot');
+  src: url('/fonts/Arimo-700/Arimo-700.eot?#iefix') format('embedded-opentype'),
+       local('Arimo Bold'),
+       local('Arimo-700'),
+       url('/fonts/Arimo-700/Arimo-700.woff2') format('woff2'),
+       url('/fonts/Arimo-700/Arimo-700.woff') format('woff'),
+       url('/fonts/Arimo-700/Arimo-700.ttf') format('truetype'),
+       url('/fonts/Arimo-700/Arimo-700.svg#Arimo') format('svg');
+}
+
+@font-face {
+  font-family: 'Arimo';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/Arimo-italic/Arimo-italic.eot');
+  src: url('/fonts/Arimo-italic/Arimo-italic.eot?#iefix') format('embedded-opentype'),
+       local('Arimo Italic'),
+       local('Arimo-italic'),
+       url('/fonts/Arimo-italic/Arimo-italic.woff2') format('woff2'),
+       url('/fonts/Arimo-italic/Arimo-italic.woff') format('woff'),
+       url('/fonts/Arimo-italic/Arimo-italic.ttf') format('truetype'),
+       url('/fonts/Arimo-italic/Arimo-italic.svg#Arimo') format('svg');
+}
+
+@font-face {
+  font-family: 'Arimo';
+  font-weight: 700;
+  font-style: italic;
+  src: url('/fonts/Arimo-700italic/Arimo-700italic.eot');
+  src: url('/fonts/Arimo-700italic/Arimo-700italic.eot?#iefix') format('embedded-opentype'),
+       local('Arimo Bold Italic'),
+       local('Arimo-700italic'),
+       url('/fonts/Arimo-700italic/Arimo-700italic.woff2') format('woff2'),
+       url('/fonts/Arimo-700italic/Arimo-700italic.woff') format('woff'),
+       url('/fonts/Arimo-700italic/Arimo-700italic.ttf') format('truetype'),
+       url('/fonts/Arimo-700italic/Arimo-700italic.svg#Arimo') format('svg');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Roboto-Condensed-regular/Roboto-Condensed-regular.eot');
+  src: url('/fonts/Roboto-Condensed-regular/Roboto-Condensed-regular.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Condensed'),
+       local('Roboto-Condensed-regular'),
+       url('/fonts/Roboto-Condensed-regular/Roboto-Condensed-regular.woff2') format('woff2'),
+       url('/fonts/Roboto-Condensed-regular/Roboto-Condensed-regular.woff') format('woff'),
+       url('/fonts/Roboto-Condensed-regular/Roboto-Condensed-regular.ttf') format('truetype'),
+       url('/fonts/Roboto-Condensed-regular/Roboto-Condensed-regular.svg#RobotoCondensed') format('svg');
+}
+
+html {
+  overflow-y: scroll;
+}
+body { 
+  font-size: 0.75em; 
+}
+a,
+a:active,
+a:focus {
+    outline: none;
+}
+sup {
+  top: -0.7em;
+}
+sub, sup {
+  position: relative;
+  font-size: 50%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+h1{
+  font-family: 'Roboto Condensed';
+  color:  #402687;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  transform: scaleX(1.0003);
+}
+h2{
+  font-family: Arimo;
+  color:  #008bac;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  transform: scaleX(1.0003);
+}
+h3 {
+  font-family: Arimo;
+  color:  #008bac;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  transform: scaleX(1.0003);
+}
+h4{
+  font-family: Arimo;
+  color:  #008bac;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
+  transform: scaleX(1.0003);
+  text-align: center;
+}
+p, ul, li {
+  font-family: Arimo;
+  color:  #4a4949;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+}
+.padding-top-20 {
+  padding-top: 20px;
+}
+.padding-top-30 {
+  padding-top: 30px;
+}
+.padding-top-40 {
+  padding-top: 40px;
+}
+.boxwithpill {
+    padding-top:200px;
+}
+@media (max-width: 992px) {
+    .boxwithpill {
+        padding-top:0;
+    }
+}
+.mobile-img-only {
+    display:none;
+}
+@media (max-width: 992px) {
+    .mobile-img-only {
+        display:block;
+    }
+    span.center {
+        margin-bottom:5px;
+    }
+    .desktop-img-only {
+        display:none;
+    }
+}
+span.center {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 5px;
+}
+.modal-body {
+  position: relative;
+  padding: 0px;
+  margin-bottom: -5px;
+}
+iframe {
+  border:0px
+}
+body.modal-open { padding-right: 0px !important; }
+.container {
+  max-width: 1160px;
+}
+
+img.full {
+	width: 100%;
+}
+
+.main-wrapper {
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;    
+  background-size: 1160px 1159px ;  
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 19;
+}
+.navbar-nav > li {
+  position: relative
+}
+.navbar-nav > li:first-child:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: transparent!important;
+  top: 50%;
+  margin-top: -2px;
+  right: -3px;
+  z-index: 1;
+  border-radius: 6px;
+}
+.navbar-right {
+    float: right!important;
+    margin-right: -25px;
+}
+.navbar-nav > li:before,
+.navbar-nav > li:last-child:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #c5dcb6;
+  top: 50%;
+  margin-top: -2px;
+  right: -3px;
+  z-index: 1;
+  border-radius: 6px;
+}
+.navbar-nav > li:before {
+  right: auto;
+  left: -3px;
+}
+.navbar-collapse .navbar-nav>li>a,
+.navbar-collapse .navbar-nav>li>a:hover {
+  font-family: 'Roboto Condensed';
+  color: #402687;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 48px;
+  padding: 0px 13px;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-collapse .navbar-nav>.open>a, 
+.navbar-collapse .navbar-nav>.open>a:focus, 
+.navbar-collapse .navbar-nav>.open>a:hover {
+  color: #402687!important;
+  background-color: transparent!important;
+}
+.navbar-collapse .navbar-nav>.open>a:hover:after{
+    border-bottom: 5px solid #b6d8dc;
+    top: 14px;
+    bottom: 0;
+    content: url("/images/UI/img_NavSlider.png");
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: transparent!important;
+}
+.navbar-collapse .navbar-nav>li>a:hover:after,
+.navbar-collapse .navbar-nav>li>a:focus:after{
+    border-bottom: 5px solid #b6d8dc;
+    top: 14px;
+    bottom: 0;
+    content: url("/images/UI/img_NavSlider.png");
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: transparent!important;
+}
+.dropdown-menu>li>a {
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: #402687;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+    text-decoration: none;
+    background-color: #008BAC;
+    font-family: 'Roboto Condensed';
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.dropdown-menu{
+    right: -20px !important;
+}
+
+#accordion a{
+      text-decoration: none;
+}
+#accordion h2{
+    margin: 0px;
+    color: #018BAC!important;
+    font-size: 20px;
+}
+#accordion h2:before {
+    content: url('../images/questionmark.png');
+    position: relative;
+    left: 0px;
+    top: 5px;
+    margin-right: 15px;
+}
+#accordion span.glyphicon {
+    float: right;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #D8EBCA;
+    border-color: #D8EBCA;
+}
+.active:after{
+    border-bottom: 5px solid #b6d8dc;
+    top: 14px;
+    bottom: 0;
+    content: url("/images/UI/img_NavSlider.png");
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: transparent!important;
+}
+.active-hover:after{
+    border-bottom: 5px solid #b6d8dc;
+    top: 14px;
+    bottom: 0;
+    content: url("/images/UI/img_NavSlider.png");
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: transparent!important;
+}
+#navcontainer {
+    display: block!important;
+    background: #008bac;
+    height: 24px;
+    max-width: 1160px;
+    display: block;
+    margin: 0 auto;
+}
+#navcontainer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+#navcontainer ul li {
+    display: inline;
+    line-height: 24px;
+}
+#navcontainer ul li {
+    font-family: 'Arimo';
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: inherit;
+}
+#navcontainer ul li a {
+    font-family: 'Arimo';
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0px 3px;
+    text-align: center;
+    text-transform: inherit;
+}
+
+img#logo {
+	margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+    #navcontainer .mobile-hide {
+        display:none;
+    }
+    .isi .mobile-hide {
+        display:none;
+    }
+    #footbox .isi h1 {
+        font-size:18px;
+        margin: 0 !important;
+    }
+    #footbox .isi p {
+        font-size:14px;
+        padding-top:0;
+        margin-bottom:5px !important;
+        line-height:14px;
+    }
+    #footbox .isi li {
+        line-height:14px;
+    }
+}
+@media screen and (max-width: 441px) {
+    #navcontainer ul li a {
+        padding: 0 2px;
+        font-size: 9px;
+    }
+}
+.mobile-menu-close {
+  display: none!important;
+}
+#mobileCTAs{
+    display: none;
+}
+span.caret{
+  display: none;
+}
+div.call-out {
+      padding: 40px 0px 40px 0px!important;
+
+} 
+h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+    padding-top: 62px;
+    padding-bottom: 15px;
+}
+button.main-callout {
+    font-family: Arimo;
+    color: #ffffff;
+    font-size: 13.93px;
+    font-weight: 700;
+    transform: scaleY(1.0051);
+    background-color: #008bac;
+    min-height: 30px;
+    text-align: center;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 0px 20px 0px 20px;
+}
+	button.main-callout:hover {
+		background-color: #046e87;
+	}
+	button.main-callout.error {
+		background-color: grey;
+	}
+	
+	#term-check.error, #age-check.error {
+		color: red;
+	}
+		#term-check.error input[type=checkbox], #age-check.error input[type=checkbox] {
+			outline: 1px solid red;
+		}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 7px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #402687;
+    width: -3%;
+    border-radius: 50%;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0, .8);
+}
+#diagnosis li {
+  padding: 0px 0px 15px 60px;
+}
+#is-pinworm-contagious {
+  list-style-type: decimal;
+}
+#is-pinworm-contagious li{
+  font-weight: bold;
+}
+.icon-spacer {
+  padding-left: 75px;
+}
+li.flashlight:before{
+  background-image: url('../images/Flashlight.png');
+  background-repeat: no-repeat;
+  background-size: 85px 85px;
+  display: inline-block;
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 10px;
+  content:"";
+}
+li.tape:before{
+  background-image: url('../images/Tape.png');
+  background-repeat: no-repeat;
+  background-size: 85px 85px;
+  display: inline-block;
+  position: absolute;
+  width: 85px; 
+  height: 85px;
+  left: 10px;
+  content:"";
+}
+#terms {
+  list-style-type: decimal;
+}
+#terms li{
+  font-size: 14px;
+  line-height: 16px;
+}
+.Pinworm ul.nav.navbar-nav.navbar-right,
+.AboutEmverm ul.nav.navbar-nav.navbar-right,
+.Savings ul.nav.navbar-nav.navbar-right,
+.Resources ul.nav.navbar-nav.navbar-right,
+.ProtectingYourHousehold ul.nav.navbar-nav.navbar-right,
+.Pinworm-Life-Cycle ul.nav.navbar-nav.navbar-right,
+.Pinworm-Reinfection ul.nav.navbar-nav.navbar-right,
+.How-to-get-rid-of-pinworm ul.nav.navbar-nav.navbar-right,
+.Is-pinworm-contagious ul.nav.navbar-nav.navbar-right,
+.Pinworm-symptoms ul.nav.navbar-nav.navbar-right,
+.Diagnosis ul.nav.navbar-nav.navbar-right,
+.Faq ul.nav.navbar-nav.navbar-right{
+    border-bottom: 1px solid #c5dcb6;
+    cursor: pointer;
+    position: relative;
+}
+.jumbotron {
+    padding-top: 0px;
+    background: url('../images/Home/Homepage1.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    max-height: 1200px;
+}
+.Text .Stylistic .NinetyFive {
+  color: #008bac;
+  font-size: 100px;
+  letter-spacing: -2px;
+  line-height: 85px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 600;
+}
+.Text .Stylistic .NinetyFive .Super {
+  font-size: 50px;
+  position: relative;
+  top: -35px;
+}
+.Text .Stylistic .CureRate {
+  color: #008bac;
+  font-size: 24px;
+  position: relative;
+  left: -40px;
+  top: -5px;
+  letter-spacing: -1px;
+  overflow: visible;
+  overflow-wrap: normal;
+  font-weight: 700;
+}
+.CallToAction .col-md-4 {
+    margin-bottom: 20px;
+}
+.CallToAction .Action .Icon {
+  float: left;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.CallToAction .Blue {
+  background: #008bac;
+}
+.CallToAction .Purple {
+  background: #6148a5;
+}
+.CallToAction .Space {
+  float: left;
+  width: 30px;
+  height: 20px;
+}
+.CallToAction .Action {
+  max-width: 270px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 20px 20px 20px 20px;
+  color: #ffffff;
+  border: 1px solid #b6d8dc;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.CallToAction .Text .Big {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 800;
+  position: relative;
+  top: -3px;
+  letter-spacing: -1px;
+}
+.CallToAction .Text .Small {
+    font-size: 16px;
+    line-height: 16px;
+}
+.CallToAction .Button {
+  position: relative;
+  top: -1px;
+  float: left;
+  border-radius: 15px;
+  padding: 5px 10px;
+  background: #b6d8dc;
+  font-size: 14px;
+}
+.CallToAction .Button .arrow {
+  margin-left: 5px;
+}
+.CallToAction .Text {
+    float: left;
+    font-weight: 200;
+    font-family: 'Arimo', sans-serif;
+}
+.Home h1 {
+  position: relative;
+  font-family: 'Roboto Condensed', sans-serif;
+  color:  #402687;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  margin: 0px;
+}
+.Home h2 {
+    font-family: Arimo;
+    color:  #402687;
+    font-size: 26.48px;
+    font-style: italic;
+    line-height: 26.48px;
+    text-align: center;
+    font-weight: 700;
+}
+  #desktopCTAs {
+        display: block;
+        position: absolute;
+        top: 20%;
+        right: 59px;
+        z-index:17;
+    }
+    .desktop-cta {
+      width: 140px;
+      height: 110px;
+    }
+    .desktop-cta a div {
+      width: 198px;
+      height: 81px;
+      background-repeat: no-repeat;
+      background-position: 8px 0;
+      background-size: 198px 81px;
+    }
+    .desktop-cta img {
+      position: relative;
+      height: 100%;
+    }
+    .cta-1 {
+      background-image: url(../images/CTAs/CTA1.png);
+    }
+    .cta-2 {
+      background-image: url(../images/CTAs/CTA2.png);
+    }
+    .cta-3 {
+      background-image: url(../images/CTAs/CTA3.png);
+    }
+    .cta-1:hover,
+    .cta-2:hover,
+    .cta-3:hover {
+      background-position: 0 0;
+    }
+.Home .navbar-default {
+  margin-top: 15px;
+}
+.Pinworm #navcontainer {
+    margin-bottom: 15px;
+}
+.Pinworm p {
+    font-family: Arimo;
+    color:  #4a4949;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+.Pinworm h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+    padding-top: 62px;
+    padding-bottom: 15px;
+}
+.Pinworm h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 250px;
+}
+.Pinworm h2{
+    font-family: Arimo;
+    color:  #008bac;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    transform: scaleX(1.0003);
+}
+.Pinworm h3 {
+    font-family: Arimo;
+    color:  #008bac;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    transform: scaleX(1.0003);
+}
+.Pinworm h4{
+    font-family: Arimo;
+    color:  #008bac;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: left;
+    transform: scaleX(1.0003);
+    text-align: center;
+    margin: 50px;
+}
+.Pinworm button.about-pinworm {
+    font-family: Arimo;
+    color:  #ffffff;
+    font-size: 13.93px;
+    font-weight: 700;
+    transform: scaleY(1.0051);
+    background-color:  #008bac;
+    width: 311px;
+    height: 30px;
+    text-align: center;
+    border: none;
+}
+.Pinworm hr {
+    border-bottom:  2px solid #d8edca;
+    width: 100%;
+    margin: 40px 0px 40px 0px;
+}
+.Pinworm .Map {
+    background: url('/images/About/img_US.png') no-repeat center;
+    width: 420px;
+    margin: auto;
+    color: #008bac;
+    padding: 50px 57px 58px 50px;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.Pinworm .Map .Forty {
+  float: left;
+  font-size: 90px;
+  line-height: 90px;
+}
+.Pinworm .Map .Million {
+  padding-top: 15px;
+  float: right;
+  font-size: 38px;
+  line-height: 30px;
+}
+.Pinworm .Map .Upto {
+  padding-top: 15px;
+  float: left;
+  font-size: 38px;
+  line-height: 30px;
+}
+.Pinworm .Map .PinwormInfection {
+  color: #402687;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  position: relative;
+  top: -5px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.Pinworm .Map .FloatContainer:before,
+.Pinworm .Map .FloatContainer:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.Pinworm .Map .FloatContainer:after {
+  clear: both;
+}
+.Pinworm .Map .FloatContainer {
+    zoom:1;
+}
+@media (max-width: 499px) {
+    .Pinworm .Map {
+        width: 300px;
+        background-size:300px;
+    }
+    .Pinworm .Map .Forty {
+      font-size: 68px;
+      line-height: 68px;
+    }
+    .Pinworm .Map .Million {
+      font-size: 28px;
+        padding-top: 2px;
+    }
+    .Pinworm .Map .PinwormInfection {
+      top: 0px;
+    }
+}
+.Pinworm .Fact {
+  float: right;
+  background: #d8edca;
+  border-radius: 40px;
+  width: 500px;
+  padding: 20px;
+  text-transform: uppercase;
+  overflow: visible;
+}
+.Pinworm .Fact .Text {
+  float: right;
+  width: 300px;
+}
+.Pinworm .Fact .Image {
+  float: left;
+  max-width: 1px;
+  max-height: 1px;
+  overflow: visible;
+}
+.Pinworm .Fact .Image img {
+  position: relative;
+  top: -68px;
+  left: -70px;
+}
+.Pinworm .Callout {
+  display: none;
+}
+.Pinworm .TheOnly {
+  color: #402687;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.Pinworms .Panel {
+    width: 48.5%;
+    font-family: 'arimo', sans-serif;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.Pinworm .Panel ul li {
+  margin-bottom: 20px;
+}
+.Pinworm .Family {
+  min-width: 269px;
+  float: left;
+}
+.Pinworm .Family img {
+  padding-top: calc(100% - 232px);
+}
+.Pinworm .Panel {
+  width: 100%;
+  font-family: 'arimo', sans-serif;
+  font-size: 16px;
+  margin: 40px 0px 20px 0px;
+  padding: 0px 15px 0px 15px;
+}
+.Pinworm .Panel .Title {
+  text-align: center;
+  background: #008bac;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.Pinworm .Panel .Title div {
+  padding: 15px 0px;
+}
+.Pinworm .Panel .Title .Super {
+  font-size: 12px;
+  position: relative;
+  top: -10px;
+}
+.Pinworm .Panel .PanelContent {
+  background: #daf4f7;
+  line-height: 19px;
+}
+.Pinworm .Panel .PanelContent .Super {
+  font-size: 10px;
+  position: relative;
+  top: -6px;
+}
+.Pinworm .Panel ul {
+  list-style-image: url('/images/Shared/img_Bullet.png');
+}
+.Pinworm .Panel ul li {
+  padding-left: 5px;
+}
+.girl-itch-class {
+    padding:50px;
+    float:right;
+}
+@media (max-width: 992px) {
+    .Pinworm .Panel .Title {
+      font-size: 20px;
+        line-height:20px;
+        padding:5px;
+    }
+    .Pinworm .Panel .PanelContent {
+        padding:5px;
+    }
+    .mobile-margin {
+        margin-bottom:10px;
+    }
+    .girl-itch-container {
+        width:180px;
+        margin:0 auto;
+    }
+    .girl-itch {
+        max-width:100px;
+        margin:0 auto;
+    }
+    .girl-tablet {
+        max-width:200px;
+    }
+    .mobile-img-only .brochure {
+        margin:0 auto;
+    }
+    #download-the-brochure {
+        margin:0 auto;
+    }
+}
+@media (max-width: 499px) {
+    .girl-itch-class {
+        padding:0px;
+        margin-bottom:10px;
+    }
+}
+.caption-space {
+    margin:5px 0;
+}
+.AboutEmverm h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+}
+.super {
+    top:-5px;
+    font-size:.75em;
+}
+.ProtectingYourHousehold h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 200px;
+}
+.ProtectingYourHousehold h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+}
+.Pinworm-Reinfection h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 535px;
+}
+.Pinworm-Life-Cycle h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 250px;
+}
+.How-to-get-rid-of-pinworm h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 535px;
+}
+.Is-pinworm-contagious h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 415px;
+}
+.Pinworm-symptoms h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 260px;
+}
+.sleeping-girl {
+    float:right;
+}
+.Diagnosis h1.headline:before{
+    content: 'If you think someone in your family has pinworm infection…';
+    font-family: Arimo;
+    color: #008bac;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: left;
+    transform: scaleX(1.0003);
+    display: block;
+}
+.Diagnosis h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 345px;
+}
+.Faq h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 260px;
+}
+.AboutEmverm h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 410px;
+}
+.Savings h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+	padding-top: 80px;
+	width: 360px;
+}
+.Savings h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 236px;
+}
+
+.Savings .Sorry {
+	background: url('/images/Call-outs/Panda_3.png') no-repeat center;
+	width: 547px;
+	height: 248px;
+	margin: auto;
+	margin-top: 0px;
+	padding: 50px 20px 0px 0px;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.Savings .Happy {
+	background: url('/images/Call-outs/Happy_bear.png') no-repeat center;
+	background-size: contain;
+	width: 547px;
+	height: 248px;
+	margin: auto;
+	margin-top: 0px;
+	padding: 50px 20px 0px 0px;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+	
+}
+
+
+
+/*
+.Savings .Sorry .FloatContainer:before,
+.Savings .Sorry .FloatContainer:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.Savings .Sorry .FloatContainer:after {
+  clear: both;
+}
+*/
+.Savings .Sorry .FloatContainer, .Savings .Happy .FloatContainer {
+    zoom:1;
+}
+.Savings .Sorry .text1 {
+    color:  #008bac;
+    font-size: 66px;
+	line-height: 66px;
+	padding-top: 20px;
+	text-align: center;
+	padding-left: 235px;
+}
+.Savings .Sorry .text2 {
+    color:  #402687;
+    font-size: 18px;
+	line-height: 18px;
+	text-align: left;
+	padding-left: 239px;
+}
+.Savings .Sorry .text3 {
+    color:  #008bac;
+    font-size: 66px;
+	line-height: 66px;
+	padding-top: 0px;
+	text-align: center;
+	padding-left: 350px;
+	margin-top: -45px;
+}
+
+.Savings .Happy .text1 {
+    color:  #008bac;
+    font-size: 28px;
+	line-height: 28px;
+	padding-top: 40px;
+	text-align: left;
+	padding-left: 265px;
+}
+	.Savings .Happy .text1 span {
+		font-size: 48px;
+	}
+	
+.Savings .Happy .text2 {
+    color:  #402687;
+    font-size: 85px;
+	line-height: 85px;
+	text-align: left;
+	padding-left: 420px;
+	margin-top: -77px;
+}
+	.Savings .Happy .text2 span {
+		font-size: 22px;
+		vertical-align: top;
+		line-height: 42px;
+	}
+	
+.Savings .Happy .text3 {
+    color:  #402687;
+    font-size: 10px;
+	line-height: 12px;
+	padding-top: 0px;
+	text-align: left;
+	padding-left: 265px;
+	text-transform: none;
+	margin-top: 20px;
+}
+
+@media (max-width: 568px) {
+	.Savings .Sorry {
+	width: 100%;
+	background-size:100%;
+	margin: auto;
+	margin-top: 0px;
+	text-align: right;
+	padding: 90px 10px 0px 0px;
+	/*padding: 90px 0px 0px 110px;*/
+    }
+    .Savings .Sorry .text1 {
+	font-size: 9vw;
+	line-height: 9vw;
+	padding-top: 0;
+	padding-left: 34vw;
+    }
+	.Savings .Sorry .text2 {
+	font-size: 2.7vw;
+	padding-left: 36vw;
+    }
+    .Savings .Sorry .text3 {
+	font-size: 9vw;
+	line-height: 9vw;
+	padding-top: 0;
+	padding-left: 54vw;
+	margin-top: -9vw;
+    }
+	.Savings h1.headline {
+	padding-top: 10px;
+	width: auto;
+	margin-top: 20px;
+	}
+}
+
+.Resources h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+}
+.Resources h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 425px;
+}
+.Resources button.pinworm-resources {
+    font-family: Arimo;
+    color:  #ffffff;
+    font-size: 13.93px;
+    font-weight: 700;
+    transform: scaleY(1.0051);
+    background-color:  #008bac;
+    width: 311px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    margin: 20px 0px 20px 0px;
+}
+.Contact h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 165px;
+}
+.Sitemap h1.headline:after{
+    content: '';
+    position: absolute;
+    left: 135px;
+}
+.savings-box {
+  background: #daf4f7;
+}
+.savings-box ul {
+  list-style-image: url('/images/Shared/img_Bullet.png');
+  padding: 15px;
+  margin-left: 25px;
+}
+.savings-box ul li {
+}
+.savings-box-head {
+  background: #008bac;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 23px;
+  font-size: 23px;
+  font-weight: 600;
+}
+.how-to-get-rid-of-pinworm {
+  background: #daf4f7;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 15px 0px;
+}
+.how-to-get-rid-of-pinworm ul {
+  list-style-image: url('/images/Shared/img_Bullet.png');
+  padding: 15px;
+  margin-left: 25px;
+}
+.how-to-get-rid-of-pinworm ul li {
+}
+.how-to-get-rid-of-pinworm-head {
+  background: #008bac;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 23px;
+  font-size: 23px;
+  font-weight: 600;
+}
+.global-box {
+  background: #daf4f7;
+  margin: 20px 0px 20px 0px;
+}
+.global-box ul {
+  list-style-image: url('/images/Shared/img_Bullet.png');
+  padding: 15px;
+  margin-left: 25px;
+}
+.global-box ul li {
+}
+.global-box-head {
+  background: #008bac;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 23px;
+  font-size: 23px;
+  font-weight: 600;
+}
+#isi {
+    padding-top: 40px;
+}
+#isi a {
+  text-decoration: underline;
+}
+#isi h1 {
+    font-family: Arimo;
+    color:  #008bac;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    margin: 5px 0px 0px 0px;
+}
+#isi ul {
+    margin-left: -25px;
+    font-family: Arimo;
+    color: #4A4949;
+    font-size: 14px;
+    font-weight: 400;
+}
+#isi ul li {
+    font-size: 14px!important;
+}
+#isi p {
+    font-size: 14px;
+    text-align: left;
+    padding-top: 2px;
+    margin-bottom: 10px!important;
+}
+
+#isi strong.emphasis {
+    color:  #008bac;
+}
+#isi .reference {
+    font-size: 12px!important;
+    line-height: 12px;
+    padding-bottom: 5px;
+}
+.isi {
+    padding-top: 40px;
+}
+.isi h1 {
+    font-family: Arimo;
+    color:  #008bac;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    margin: 5px 0px 0px 0px;
+}
+.isi ul {
+    margin-left: -25px;
+    font-family: Arimo;
+    color: #4A4949;
+    font-size: 14px!important;
+    font-weight: 400;
+}
+.isi ul li {
+    font-family: Arimo;
+    color: #4A4949;
+    font-size: 14px!important;
+}
+.isi p {
+    font-size: 14px;
+    text-align: left;
+    padding-top: 2px;
+    margin-bottom: 10px!important;
+}
+
+.isi .reference {
+    font-size: 10px!important;
+    line-height: 14px;
+    padding-bottom: 5px;
+}
+.isi-link {
+    text-decoration:underline;
+}
+
+.footer {
+    background: #008BAC;
+
+}
+.footer .container {
+    background-color: #008bac!important;
+    color: #fff;
+    padding: 40px 0px 40px 15px;
+
+}
+.footer .footer-logo{
+    /* float: right; */
+    /* padding: 0px; */
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    position: static;
+}
+.footer p {
+    padding-top: 15px;
+    font-family: Arimo;
+    color:  #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;      
+}
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-links {
+    font-family: Arimo;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+span.us-flag::before {
+    content: url(../images/us-flag.png);
+    height: 12px;
+    height: 8px;
+    padding-right: 5px;
+}
+span.italic {
+    font-style: italic;
+}
+span.spacing {
+    padding-right: 20px;
+}
+span.isi {
+    font-family: Arimo;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 15px;
+}
+@media (max-width: 499px) {
+    span.isi {
+        padding:5px;
+    }
+}
+div#container {width:100%; margin: 0px; border: solid 0px red; }
+div#footbox {
+    position: fixed;
+    max-width: 1160px;
+    bottom: 0px;
+    height: 105px;
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+    z-index: 19;
+}
+
+#footbox strong.emphasis {
+    color:  #008bac;
+}
+div#content { position: relative; margin: 20px 0 0 0; padding: 20px; background-color:rgba(0,0,0,0.4); border: solid 0px blue; clear: both; }
+div#up {position: fixed; left: 50%; margin-left: -30px; top: 0; height: 30px; width: 60px; border: solid 0px blue;  }
+
+
+.blar { position: relative; margin: 20px; padding: 10px; background-color:rgba(0,0,0,0.4); border: solid 0px blue;  }
+
+
+.footColA { float: left; display:inline;  }
+.footColB {  float: right; display:table-cell; margin-top: 60px; padding: 20px; text-align: right;}
+
+.footColB span i {  
+    color: white; 
+    vertical-align: middle;
+    font-size: 2.5em;  
+    margin: 5px;  
+    -webkit-transition: transform 0.2s ease-in-out; 
+    -moz-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+}
+.footColB span i:hover { transform:scale(1.1); }  
+
+
+#up img{  
+    opacity: 0;
+    height: 15px;
+    width: 55px;
+    -moz-transition:-moz-transform 0.1s ease-in;  
+    -webkit-transition:-webkit-transform 0.1s ease-in;     
+    -o-transition:-o-transform 0.1s ease-in;  
+}
+#up img:hover{  
+    -moz-transform:scale(1.2);  
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);}
+
+
+    div#imgbox { 
+        background: #402687; 
+        margin-bottom: 10px;
+    } 
+    .img {
+        width:400px;
+        height:auto; 
+    }  
+
+    ul.rig2 {
+        position: relative;
+        list-style-type: none;
+        border: 0px solid blue;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    ul.rig2 li {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        margin: 0 1% 1% 0;
+        background: #fff;
+        border: 0px solid green;
+        position: relative;
+    }
+
+    ul.rig2 li.img {max-width: 280px;}
+
+    span.text-content {
+        position: absolute; 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        background: rgba(0,0,0,0.9);
+        color: white;
+        cursor: default;
+        display: table; 
+        left: 10px;
+        top: 10px;
+        padding: 0;
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+        letter-spacing: -1px;
+    } 
+
+    span.text-content span {  
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    ul.rig2 li:hover span.text-content {
+        opacity: 1; 
+        cursor: default;
+    } 
+    .hide {
+        display: none;
+    }
+    .open-isi {
+        position:absolute;
+        top: 4px;
+        right:15px;
+    }
+    .close-isi {
+        display: none;
+        position:absolute;
+        top: 4px;
+        right:15px;
+    }
+
+/* IE < 8 */
+.Left {
+  float: left;
+}
+.Right {
+  float: right;
+}
+.Clear {
+  clear: both;
+}
+.Content {
+  width: 1200px;
+  margin: 0px auto;
+}
+.purple {
+  color: #211061;
+}
+.blue {
+  color: #008bac;
+}
+.bold {
+  font-weight: bold;
+}
+.light {
+  font-weight: 200;
+}
+.lightpurple {
+  color: #6148a5;
+}
+.lightblue {
+  color: #008bac;
+}
+.clearfix {
+  clear: both;
+}
+  #mobileCTAsHome{
+    display:none;
+  }
+@media (max-width: 499px) {
+  .Pinworm .Family {
+    padding-top:0;
+      width:100%;
+      text-align:center;
+      position:relative;
+  }
+    .Pinworm .Family img {
+    padding-top:0;
+        padding-bottom:5px;
+  }
+    #desktopCTAs {
+        display:none;
+    }
+  #mobileCTAsHome{
+    display: block;
+   position:relative;
+      width:200px;
+      z-index:18;
+      margin:0 auto;
+  }
+    #mobileCTAsHome div{
+    height:81px;
+        border-radius:10px;
+        margin-bottom:5px;
+  }
+  #mobileCTAs{
+    display: block!important;
+  }
+  .jumbotron {
+    padding-top: 0px;
+    background: url('../images/Home/bg_HeroLion.jpg') center;
+    background-size: cover;
+    height: 65vh;
+    position: relative;
+    max-height: 1200px;
+    }
+}
+@media (max-width: 1167px) {
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #432E7C;
+    height: 6px;
+    border-radius: 4px;
+    width: 34px;
+    margin-top: 3px;
+  }
+  .navbar-default .navbar-toggle:focus, 
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent!important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent!important;  
+  }
+  .navbar-nav > li:before, .navbar-nav > li:last-child:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: transparent!important;
+    top: 50%;
+    margin-top: -2px;
+    right: -3px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  li.mobile-menu-close {
+    display:
+    block!important;
+    background-color: #402687;
+    margin: -1px -15px 0px -15px;
+  }
+  a.mobile-menu-close {
+    border-bottom: none;
+  }
+  .dropdown-menu {
+    display: none !important;
+  }
+  .navbar-nav>li {
+    padding: 0px 20px 0px 20px;
+  }
+  .open .dropdown-menu {
+    display: block !important;
+  } 
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin: 0px 0px -5px 0px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+  .navbar-inverse .navbar-nav>.open>a, 
+  .navbar-inverse .navbar-nav>.open>a:focus, 
+  .navbar-inverse .navbar-nav>.open>a:hover {
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 80px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #6849bb;
+    background: #6849bb;
+    margin-top: 15px;
+  }
+  .navbar-nav .open .dropdown-menu li:last-child{
+    border-bottom: 0px solid #fff;
+    margin-bottom: -5px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #FFF;
+  }
+  .navbar-collapse .navbar-nav>.open>a, 
+  .navbar-collapse .navbar-nav>.open>a:focus, 
+  .navbar-collapse .navbar-nav>.open>a:hover {
+    color: #FFFFFF!important;
+    background-color: transparent!important;
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 80px;
+    text-align: left;
+  }
+  .navbar-collapse .navbar-nav>li>a, 
+  .navbar-collapse .navbar-nav>li>a:focus, 
+  .navbar-collapse .navbar-nav>li>a:active, 
+  .navbar-collapse .navbar-nav>li>a:hover {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 80px;
+    text-align: left;
+    border-bottom: 1px solid #9475e6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 80px;
+    text-align: left;
+    border-bottom: 1px solid #9475E6;
+  }
+  .navbar-collapse .navbar-nav>.open>a:after,
+  .navbar-collapse .navbar-nav>.open>a:focus:after,
+  .navbar-collapse .navbar-nav>.open>a:active:after,
+  .navbar-collapse .navbar-nav>li>a:after,  
+  .navbar-collapse .navbar-nav>li>a:focus:after,  
+  .navbar-collapse .navbar-nav>li>a:hover:after,
+  .navbar-collapse .navbar-nav>li>a:active:after{
+    border-bottom: none;
+    top: 0;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    background-color: transparent!important
+  }
+  .navbar-collapse .navbar-nav>.open>a:after, 
+  .navbar-collapse .navbar-nav>.open>a:focus:after, 
+  .navbar-collapse .navbar-nav>.open>a:hover:after, 
+  .navbar-collapse .navbar-nav>.open>a:active:after {
+    border-bottom:none;
+    top: 14px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: transparent!important;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: #6849BB;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .jumbotron .container {
+    padding: 0px;
+  }
+  span.caret{
+    display: block!important;
+  }
+  #logo {
+    padding-left: 20px;
+  }
+  .caret {
+    background: url('../images/menu-collapse.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    height: 19px;
+    width: 33px;
+    float: right;
+    margin: 30px 0px;
+  }
+  .caret-close{
+    background: url('../images/mobile-menu-close.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    height: 34px;
+    width: 20px;
+    float: right;
+    margin: 25px 15px 0px 0px;    
+  }
+
+.Pinworm h1.headline:after,
+.ProtectingYourHousehold h1.headline:after,
+.Pinworm-Reinfection h1.headline:after,
+.Pinworm-Life-Cycle h1.headline:after,
+.How-to-get-rid-of-pinworm h1.headline:after,
+.Is-pinworm-contagious h1.headline:after,
+.Pinworm-symptoms h1.headline:after,
+.Diagnosis h1.headline:after,
+.Faq h1.headline:after,
+.AboutEmverm h1.headline:after,
+.Savings h1.headline:after,
+.Resources h1.headline:after{
+    content: '';
+
+}
+}
+
+@media only screen and (max-device-width: 480px) {
+.navbar-collapse .navbar-nav>li>a, 
+.navbar-collapse .navbar-nav>li>a:focus, 
+.navbar-collapse .navbar-nav>li>a:active, 
+.navbar-collapse .navbar-nav>li>a:hover {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 80px;
+    text-align: left;
+    border-bottom: 1px solid #9475e6;
+}
+.navbar-collapse .navbar-nav>.open>a, 
+.navbar-collapse .navbar-nav>.open>a:focus, 
+.navbar-collapse .navbar-nav>.open>a:hover {
+    color: #FFFFFF!important;
+    background-color: transparent!important;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 80px;
+    text-align: left;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: left;
+    border-bottom: 1px solid #9475E6;
+}
+#logo{
+    max-width: 235px;
+    margin: 10px 0px 0px 15px;
+}
+}
+#desktop-hide {
+    display:none;
+}
+@media (max-width: 1167px) {
+    #desktop-hide {
+        display:block;
+    }
+}
+
+div#social-share {
+	float: right;
+	margin: -8px;
+	margin-right: -10px;
+}
+
+div#social-share img {
+	margin-left: 10px;
+}
+
+@media (max-width: 1167px) {
+	div#social-share {
+        display:none;
+    }
+}
+
+/* ----- OVERLAY ---- */
+
+.overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 100000;
+	
+	/*display: flex;*/
+	flex-direction: column;
+	justify-content: center;
+	
+  display: none;
+}
+
+.overlay .dialog {
+	background-color: #ffffff;
+	margin: 130px auto;
+	position: relative;
+	width: 50%;
+	text-align: center;
+}
+
+.overlay h3 {
+	color: #d52931;
+	font-size: 32px;
+	margin: 20px 0;
+}
+
+.overlay a {
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+	.overlay a.button {
+		display: inline-block;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 18px;
+		line-height: 20px;
+		background-color: #808285;
+		color: #ffffff;
+		border: 1px solid #000000;
+		border-radius: 5px;
+		text-transform: uppercase;
+		padding: 5px 20px;
+	}
+	
+	.overlay a.button img {
+		margin-left: 5px;
+		vertical-align: inherit;
+	}
+
+.overlay a span {
+	display: block;
+	font-size: 10px;
+}
+
+.overlay .close-bar {
+	background-color: #008bac;
+	position: relative;
+	height: 80px;
+}
+
+.overlay .close-button {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #ffffff;
+	background-image: url(/images/close-x.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+
+.overlay label {
+	font-size: 16px;
+}
+
+#email-share {
+	padding: 20px;
+}
+
+#email-error {
+  display: none;
+}
+
+.email-from {
+	width: 45%;
+	float: right;
+}
+
+#email-share a.button {
+	margin-top: 30px;
+}
+
+.email-to {
+	width: 45%;
+}
+
+input[type=email] {
+	font-family: "Roboto Condensed";
+	font-size: 12px;
+	display: block;
+	width: 100%;
+}
+
+div.validation-message {
+	font-size: 8px;
+	color: #d52931;
+}
+
+p.blue-header {
+	padding: 8px 12px;
+	background-color: #008bac;
+	color: white !important;
+	font-size: 16px !important;
+	line-height: 16px;
+	margin-bottom: 0;
+}
+
+#savings-terms {
+	padding-left: 20px;
+	font-family: Arimo;
+}
+	#savings-terms li {
+		/*font-size: 14px;
+		line-height: 18px;*/
+		font-weight: bold;
+	}
+	#savings-terms li span {
+		font-weight: normal;
+	}
+	
+
+
+
+div.blue-content-area {
+	padding: 8px 12px;
+	background-color: #c9e0ea;
+	height: 88%;
+}
+div.flex-row {
+	display: flex;
+	justify-content: space-between
+}
+	div.flex-row > div {
+		width: 48%;
+	}
+	
+	@media (max-width: 768px) {
+		div.flex-row {
+			display: block;
+		}
+		
+		div.flex-row > div {
+			width: auto;
+		}
+		
+		div.blue-content-area {
+			height: auto;
+			margin-bottom: 15px;
+		}
+	}
+
+
+

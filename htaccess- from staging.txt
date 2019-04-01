@@ -1,0 +1,17 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /mnt/stor9-wc1-dfw1/619905/989477/dev.emvermhcp.com/web/content/.htpasswd
+Require valid-user
+#
+RewriteEngine On
+#
+#Redirect 301 /education http://www.emvermhcp.com/savings-program/
+#Redirect 301 /savings http://www.emvermhcp.com/savings-program/
+#
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+#
+ErrorDocument 404 /404/index.html
+ErrorDocument 500 /500/index.html
+#
+#

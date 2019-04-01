@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "bluebird": "^3.3.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-include": "^2.0.3",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifyjs": "*",
+    "gulp-util": "*",
+    "gulp-watch": "^4.3.5",
+    "gulp-webserver": "^0.9.1",
+    "lodash": "^4.8.2"
+  }
+}

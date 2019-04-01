@@ -1,0 +1,24 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /srv/www/emvermstaging/current/.htpasswd
+Require valid-user
+
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^emverm\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+#RewriteRule ^(.*)$ https://www.emverm.com/$1 [R,L]
+
+Redirect 301 /saves https://www.emverm.com/?utm_campaign=emverm_redirect&utm_source=slash-saves&utm_medium=redirect
+Redirect 301 /card https://www.emverm.com/?utm_campaign=emverm_redirect&utm_source=slash-card&utm_medium=redirect
+Redirect 301 /Rx https://www.emverm.com/?utm_campaign=emverm_redirect&utm_source=slash-Rx&utm_medium=redirect
+Redirect 301 /rx https://www.emverm.com/?utm_campaign=emverm_redirect&utm_source=slash-rx&utm_medium=redirect
+Redirect 301 /works https://www.emverm.com/?utm_campaign=emverm_redirect&utm_source=slash-works&utm_medium=redirect
+Redirect 301 /copay https://www.emverm.com/?utm_campaign=emverm_redirect&utm_source=slash-copay&utm_medium=redirect
+Redirect 301 /program https://www.emverm.com/resources/?utm_campaign=emverm_redirect&utm_source=slash-program&utm_medium=redirect
+Redirect 301 /app https://www.emverm.com/resources/?utm_campaign=emverm_redirect&utm_source=slash-app&utm_medium=redirect
+Redirect 301 /PAP https://www.emverm.com/resources/?utm_campaign=emverm_redirect&utm_source=slash-PAP&utm_medium=redirect
+Redirect 301 /pap https://www.emverm.com/resources/?utm_campaign=emverm_redirect&utm_source=slash-pap&utm_medium=redirect
+Redirect 301 /assistance https://www.emverm.com/resources/?utm_campaign=emverm_redirect&utm_source=slash-assistance&utm_medium=redirect
+Redirect 301 /GoodRx https://www.emverm.com/savings-program/?utm_campaign=emverm_redirect&utm_source=GoodRx.com&utm_medium=redirect
+Redirect 301 /goodrx https://www.emverm.com/savings-program/?utm_campaign=emverm_redirect&utm_source=GoodRx.com&utm_medium=redirect
+Redirect 301 /pinworm-faqs https://www.emverm.com/pinworm-infection-faqs

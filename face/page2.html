@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <script type="text/javascript" src="pdfjs/build/pdf.js"></script>
+  </head>
+  <body>
+    <style type="text/css">
+
+    body {
+      background-color: #e9eaed;
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #3e2e7a;
+    }
+
+    .top {
+      padding: 15px;
+    }
+
+    .title {
+      padding-left: 60px;
+    }
+
+    .main {
+      padding: 0px 5px 10px 5px;
+    }
+
+    .pdf canvas {
+      border: 10px solid #ccc;
+    }
+
+    .code {
+      padding-top: 10px;
+    }
+
+    ul ul {
+      list-style: outside none; 
+      margin-left: 0; 
+      padding-left: 24px;
+    }
+
+    ul ul li {
+      text-indent: -24px;
+    }
+
+    </style>
+
+    <script type="text/javascript">
+    // If absolute URL from the remote server is provided, configure the CORS
+    // header on that server.
+    var url = "pi.pdf";
+
+    PDFJS.getDocument(url)
+      .then(function(pdf) {
+
+        // Get div#container and cache it for later use
+        var container = document.getElementById("main");
+
+        // Loop from 1 to total_number_of_pages in PDF document
+        for (var i = 1; i <= pdf.numPages; i++) {
+
+            // Get desired page
+            pdf.getPage(i).then(function(page) {
+
+              var scale = 1.2;
+              var viewport = page.getViewport(scale);
+              var div = document.createElement("div");
+
+              // Set id attribute with page-#{pdf_page_number} format
+              div.setAttribute("id", "page-" + (page.pageIndex + 1));
+
+              // This will keep positions of child elements as per our needs
+              div.setAttribute("style", "position: relative");
+
+              div.setAttribute("class", "pdf");
+
+              // Append div within div#container
+              container.appendChild(div);
+
+              // Create a new Canvas element
+              var canvas = document.createElement("canvas");
+
+              // Append Canvas within div#page-#{pdf_page_number}
+              div.appendChild(canvas);
+
+              var context = canvas.getContext('2d');
+              canvas.height = viewport.height;
+              canvas.width = viewport.width;
+
+              var renderContext = {
+                canvasContext: context,
+                viewport: viewport
+              };
+
+              // Render PDF page
+              page.render(renderContext);
+            });
+        }
+    });
+    </script>
+
+    <div class="top">
+      <table>
+        <tr>
+          <td width="322">
+            <img src="emverm.png" />
+          </td>
+        </tr>
+      </table>
+      <h1>Prescribing Information</h1>
+    </div>
+
+    <div id="main">
+    </div>
+  </body>
+</html>

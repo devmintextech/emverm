@@ -1,0 +1,17 @@
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^emverm\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.emverm.com/$1 [R,L]
+
+Redirect 301 /saves https://www.emverm.com/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-saves
+Redirect 301 /card https://www.emverm.com/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-card
+Redirect 301 /Rx https://www.emverm.com/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-Rx
+Redirect 301 /rx https://www.emverm.com/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-rx
+Redirect 301 /works https://www.emverm.com/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-works
+Redirect 301 /copay https://www.emverm.com/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-copay
+Redirect 301 /program https://www.emverm.com/resources/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-program
+Redirect 301 /app https://www.emverm.com/resources/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-app
+Redirect 301 /PAP https://www.emverm.com/resources/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-PAP
+Redirect 301 /pap https://www.emverm.com/resources/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-pap
+Redirect 301 /assistance https://www.emverm.com/resources/?utm_source=Re-Direct&utm_campaign=emverm_redirect&utm_medium=slash-assistance
+Redirect 301 /pinworm-faqs https://www.emverm.com/pinworm-infection-faqs
