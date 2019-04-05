@@ -799,14 +799,14 @@ li.tape:before{
 .Pinworm .Map {
     background: url('/images/About/img_US.png') no-repeat center;
     width: 420px;
-    height: 250px;
+    height: 221px;
     margin: auto;
     color: #008bac;
     padding: 50px 57px 58px 50px;
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .Pinworm .Map .Forty {
   float: left;
