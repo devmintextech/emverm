@@ -683,6 +683,9 @@ li.tape:before{
     .cta-3:hover {
       background-position: 0 0;
     }
+    .references-container{
+      padding-top: 40px;
+    }
     .references {
       font-family: Arimo;
       font-size: 10px;
@@ -796,12 +799,14 @@ li.tape:before{
 .Pinworm .Map {
     background: url('/images/About/img_US.png') no-repeat center;
     width: 420px;
+    height: 250px;
     margin: auto;
     color: #008bac;
     padding: 50px 57px 58px 50px;
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
+    margin-top: 20px;
 }
 .Pinworm .Map .Forty {
   float: left;
@@ -1319,7 +1324,6 @@ li.tape:before{
   font-weight: 600;
 }
 #isi {
-    padding-top: 40px;
 }
 #isi a {
   text-decoration: underline;
