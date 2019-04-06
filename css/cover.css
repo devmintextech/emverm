@@ -1048,7 +1048,7 @@ li.tape:before{
     float:right;
 }
 .Diagnosis h1.headline:before{
-    content: 'If you think someone in your family has pinworm infection…';
+    content: 'If you think someone in your family has pinworms…';
     font-family: Arimo;
     color: #008bac;
     font-size: 19px;
