@@ -267,7 +267,7 @@ function validateChecks (btn) {
 	
 	if ((check1.checked == true) && (check2.checked == true)) {
 		btn.classList.remove("error");
-		window.open('https://mprsetrial.mckesson.com/7194/emverm');
+		window.open('https://mprsetrial.mckesson.com/7194/emverm#');
 		return true;
 	} else {
 		btn.classList.add("error");
