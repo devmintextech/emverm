@@ -1348,6 +1348,7 @@ li.tape:before{
   font-weight: 600;
 }
 #isi {
+  padding-top: 40px;
 }
 #isi a {
   text-decoration: underline;
