@@ -481,10 +481,10 @@ button.main-callout {
 #diagnosis li {
   padding: 0px 0px 15px 60px;
 }
-#is-pinworm-contagious {
+#Pinworm-infection {
   list-style-type: decimal;
 }
-#is-pinworm-contagious li{
+#Pinworm-infection li{
   font-weight: bold;
 }
 .icon-spacer {
@@ -527,7 +527,7 @@ li.tape:before{
 .Pinworm-Life-Cycle ul.nav.navbar-nav.navbar-right,
 .Pinworm-Reinfection ul.nav.navbar-nav.navbar-right,
 .How-to-get-rid-of-pinworm ul.nav.navbar-nav.navbar-right,
-.Is-pinworm-contagious ul.nav.navbar-nav.navbar-right,
+.Pinworm-infection ul.nav.navbar-nav.navbar-right,
 .Pinworm-symptoms ul.nav.navbar-nav.navbar-right,
 .Diagnosis ul.nav.navbar-nav.navbar-right,
 .Faq ul.nav.navbar-nav.navbar-right{
@@ -750,7 +750,7 @@ li.tape:before{
 .Pinworm h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 250px;
+    left: 280px;
 }
 .Pinworm h2{
     font-family: Arimo;
@@ -993,6 +993,22 @@ li.tape:before{
 .caption-space {
     margin:5px 0;
 }
+.SideEffects h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+}
+.Pinworm-Assistance-Program h1.headline {
+    font-family: 'Roboto Condensed';
+    color:  #402687;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    transform: scaleX(1.0003);
+}
 .AboutEmverm h1.headline {
     font-family: 'Roboto Condensed';
     color:  #402687;
@@ -1021,7 +1037,7 @@ li.tape:before{
 .Pinworm-Reinfection h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 535px;
+    left: 515px;
 }
 .Pinworm-Life-Cycle h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
@@ -1033,15 +1049,15 @@ li.tape:before{
     position: absolute;
     left: 535px;
 }
-.Is-pinworm-contagious h1.headline:after{
+.Pinworm-infection h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 415px;
+    left: 435px;
 }
 .Pinworm-symptoms h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 260px;
+    left: 140px;
 }
 .sleeping-girl {
     float:right;
@@ -1066,10 +1082,20 @@ li.tape:before{
     position: absolute;
     left: 260px;
 }
+.SideEffects h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 480px;
+}
+.Pinworm-Assistance-Program h1.headline:after{
+    content: url('/images/Shared/bg_Retro.png');
+    position: absolute;
+    left: 385px;
+}
 .AboutEmverm h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 410px;
+    left: 150px;
 }
 .Savings h1.headline {
     font-family: 'Roboto Condensed';
@@ -1876,7 +1902,7 @@ div#up {position: fixed; left: 50%; margin-left: -30px; top: 0; height: 30px; wi
 .Pinworm-Reinfection h1.headline:after,
 .Pinworm-Life-Cycle h1.headline:after,
 .How-to-get-rid-of-pinworm h1.headline:after,
-.Is-pinworm-contagious h1.headline:after,
+.Pinworm-infection h1.headline:after,
 .Pinworm-symptoms h1.headline:after,
 .Diagnosis h1.headline:after,
 .Faq h1.headline:after,
