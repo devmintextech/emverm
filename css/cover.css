@@ -750,7 +750,8 @@ li.tape:before{
 .Pinworm h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 280px;
+    /*left: 280px;*/
+    margin-left: 30px;
 }
 .Pinworm h2{
     font-family: Arimo;
@@ -1024,7 +1025,8 @@ li.tape:before{
 .ProtectingYourHousehold h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 200px;
+    /*left: 200px;*/
+    margin-left: 30px;
 }
 .ProtectingYourHousehold h1.headline {
     font-family: 'Roboto Condensed';
@@ -1037,27 +1039,32 @@ li.tape:before{
 .Pinworm-Reinfection h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 515px;
+    /*left: 515px;*/
+    margin-left: 30px;
 }
 .Pinworm-Life-Cycle h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 250px;
+    /*left: 250px;*/
+    margin-left: 30px;
 }
 .How-to-get-rid-of-pinworm h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 535px;
+    /*left: 535px;*/
+    margin-left: 30px;
 }
 .Pinworm-infection h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 435px;
+    /*left: 435px;*/
+    margin-left: 30px;
 }
 .Pinworm-symptoms h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 140px;
+    /*left: 140px;*/
+    margin-left: 30px;
 }
 .sleeping-girl {
     float:right;
@@ -1075,27 +1082,32 @@ li.tape:before{
 .Diagnosis h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 345px;
+    /*left: 345px;*/
+    margin-left: 30px;
 }
 .Faq h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 260px;
+    /*left: 260px;*/
+    margin-left: 30px;
 }
 .SideEffects h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 480px;
+    /*left: 480px;*/
+    margin-left: 30px;
 }
 .Pinworm-Assistance-Program h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 385px;
+    /*left: 385px;*/
+    margin-left: 30px;
 }
 .AboutEmverm h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 150px;
+    /*left: 150px;*/
+    margin-left: 30px;
 }
 .Savings h1.headline {
     font-family: 'Roboto Condensed';
@@ -1110,7 +1122,8 @@ li.tape:before{
 .Savings h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 236px;
+    /*left: 236px;*/
+    margin-left: 30px;
 }
 
 .Savings .Sorry {
@@ -1263,7 +1276,8 @@ li.tape:before{
 .Resources h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 425px;
+    /*left: 425px;*/
+    margin-left: 30px;
 }
 .Resources button.pinworm-resources {
     font-family: Arimo;
@@ -1280,7 +1294,8 @@ li.tape:before{
 .Contact h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
     position: absolute;
-    left: 165px;
+    /*left: 165px;*/
+    margin-left: 30px;
 }
 .Sitemap h1.headline:after{
     content: '';
