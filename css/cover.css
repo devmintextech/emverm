@@ -1066,8 +1066,15 @@ li.tape:before{
     /*left: 140px;*/
     margin-left: 30px;
 }
-.sleeping-girl {
-    float:right;
+@media (min-width: 499px){
+  .sleeping-girl {
+      float:right;
+  }
+}
+@media (max-width: 499px) {
+  .sleeping-girl {
+      margin:0 auto;
+  }
 }
 .Diagnosis h1.headline:before{
     content: 'If you think someone in your family has pinworms…';
@@ -1457,6 +1464,7 @@ li.tape:before{
     margin: 0 auto;
     clear: both;
     position: static;
+    margin-top: 6px;
 }
 .footer p {
     padding-top: 15px;
@@ -1487,7 +1495,7 @@ span.italic {
     font-style: italic;
 }
 span.spacing {
-    padding-right: 20px;
+    padding-right: 2px;
 }
 span.isi {
     font-family: Arimo;
