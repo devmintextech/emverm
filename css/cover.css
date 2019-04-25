@@ -994,6 +994,18 @@ li.tape:before{
 .caption-space {
     margin:5px 0;
 }
+.extra-space {
+    margin:10px 0;
+}
+.extra-top-space-10{
+  margin-top: 10px;
+}
+.extra-bottom-space-15 {
+    margin-bottom:15px;
+}
+.font-size-12{
+  font-size: 12px !important;
+}
 .SideEffects h1.headline {
     font-family: 'Roboto Condensed';
     color:  #402687;
@@ -1134,7 +1146,7 @@ li.tape:before{
 }
 
 .Savings .Sorry {
-	background: url('/images/Call-outs/Panda_3.png') no-repeat center;
+	background: url('/images/Call-outs/Happy_bear.png') no-repeat center;
 	width: 547px;
 	height: 248px;
 	margin: auto;
@@ -1143,6 +1155,20 @@ li.tape:before{
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
+    max-width: 100%;
+    height: auto;
+}
+
+.Savings .HappyMobile{
+	background: url('/images/Call-outs/Happy_bear.png') no-repeat center;
+	margin: auto;
+	margin-top: 0px;
+	padding: 50px 20px 0px 0px;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 100%;
+    height: auto;
 }
 
 .Savings .Happy {
@@ -1173,7 +1199,7 @@ li.tape:before{
   clear: both;
 }
 */
-.Savings .Sorry .FloatContainer, .Savings .Happy .FloatContainer {
+.Savings .Sorry .FloatContainer, .Savings .Happy .FloatContainer, .Savings .HappyMobile .FloatContainer {
     zoom:1;
 }
 .Savings .Sorry .text1 {
@@ -1239,36 +1265,53 @@ li.tape:before{
 }
 
 @media (max-width: 568px) {
-	.Savings .Sorry {
-	width: 100%;
-	background-size:100%;
-	margin: auto;
-	margin-top: 0px;
-	text-align: right;
-	padding: 90px 10px 0px 0px;
-	/*padding: 90px 0px 0px 110px;*/
-    }
-    .Savings .Sorry .text1 {
-	font-size: 9vw;
-	line-height: 9vw;
-	padding-top: 0;
-	padding-left: 34vw;
-    }
-	.Savings .Sorry .text2 {
-	font-size: 2.7vw;
-	padding-left: 36vw;
-    }
-    .Savings .Sorry .text3 {
-	font-size: 9vw;
-	line-height: 9vw;
-	padding-top: 0;
-	padding-left: 54vw;
-	margin-top: -9vw;
-    }
+	.Savings .HappyMobile {
+    width: 100%;
+    background-size:100%;
+    margin: auto;
+    margin-top: 0px;
+    text-align: right;
+    padding: 180px 10px 0px 0px;
+	  /*padding: 90px 0px 0px 110px;*/
+  }
+  .Savings .HappyMobile .text1 {
+    color: #008bac;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: -110px;
+    text-align: left;
+    padding-left: 145px;
+  }
+	.Savings .HappyMobile .text2 {
+    color: #402687;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 230px;
+    margin-top: -38px;
+  }
+  .Savings .HappyMobile .text3 {
+    color: #402687;
+    font-size: 7px;
+    line-height: 7px;
+    padding-top: 0px;
+    text-align: left;
+    padding-left: 145px;
+    text-transform: none;
+    margin-top: 10px;
+  }
+  .Savings .HappyMobile .text2 span {
+      font-size: 18px;
+      vertical-align: top;
+      line-height: 22px;
+  }
+  .Savings .HappyMobile .text1 span {
+      font-size: 25px;
+  }
 	.Savings h1.headline {
-	padding-top: 10px;
-	width: auto;
-	margin-top: 20px;
+    padding-top: 10px;
+    width: auto;
+    margin-top: 20px;
 	}
 }
 
