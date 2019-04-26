@@ -1718,6 +1718,41 @@ div#up {position: fixed; left: 50%; margin-left: -30px; top: 0; height: 30px; wi
   #mobileCTAsHome{
     display:none;
   }
+.numbers{
+  height: 65px;
+  min-height: 65px;
+  font-family: Arial;
+  font-size: 20px;
+  color: #412e85;
+  font-weight: bold;
+  padding-left: 70px;
+  line-height: 25px;
+  background-repeat: no-repeat;
+  background-position: -70px center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.number-1{
+  background-image: url("../images/prevent/1.png");
+}
+.number-2{
+  background-image: url("../images/prevent/2.png");
+}
+.number-3{
+  background-image: url("../images/prevent/3.png");
+}
+.number-4{
+  background-image: url("../images/prevent/4.png");
+}
+.number-5{
+  background-image: url("../images/prevent/5.png");
+}
+.number-6{
+  background-image: url("../images/prevent/6.png");
+}
+.number-7{
+  background-image: url("../images/prevent/7.png");
+}
 @media (max-width: 499px) {
   .Pinworm .Family {
     padding-top:0;
