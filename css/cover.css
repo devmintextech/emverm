@@ -423,6 +423,26 @@ div.call-out {
       padding: 40px 0px 40px 0px!important;
 
 } 
+
+ol.faq-ol {
+  counter-reset: item;
+}
+
+ol.faq-ol > li {
+  text-indent: -1em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol.faq-ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
 h1.headline {
     font-family: 'Roboto Condensed';
     color:  #402687;
@@ -432,6 +452,17 @@ h1.headline {
     transform: scaleX(1.0003);
     padding-top: 62px;
     padding-bottom: 15px;
+}
+
+.padding-top-62{
+  padding-top: 62px
+}
+
+@media screen and (max-width:989px){
+
+  h1.headline.padding-top-0{
+    padding-top: 0;
+  }
 }
 button.main-callout {
     font-family: Arimo;
@@ -542,6 +573,16 @@ li.tape:before{
     height: 100vh;
     position: relative;
     max-height: 1200px;
+}
+.jumbotron-home{
+  height: 10px;
+  padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+@media screen and (max-width:499px){
+  .jumbotron.jumbotron-home{
+    height: 200px;
+  }
 }
 .Text .Stylistic .NinetyFive {
   color: #008bac;
@@ -991,10 +1032,13 @@ li.tape:before{
         margin-bottom:10px;
     }
 }
+.padding-left-0{
+  padding-left: 16px;
+}
 .caption-space {
     margin:5px 0;
 }
-.extra-space {
+span.center.extra-space {
     margin:10px 0;
 }
 .extra-top-space-10{
@@ -1115,6 +1159,10 @@ li.tape:before{
     position: absolute;
     /*left: 480px;*/
     margin-left: 30px;
+}
+
+.SideEffects h1.headline.no-tail:after{
+  content: '';
 }
 .Pinworm-Assistance-Program h1.headline:after{
     content: url('/images/Shared/bg_Retro.png');
@@ -1281,6 +1329,7 @@ li.tape:before{
     margin-top: -110px;
     text-align: left;
     padding-left: 145px;
+    /*padding-left: 40vw;*/
   }
 	.Savings .HappyMobile .text2 {
     color: #402687;
@@ -1289,6 +1338,7 @@ li.tape:before{
     text-align: left;
     padding-left: 230px;
     margin-top: -38px;
+    /*padding-left: 61vw;*/
   }
   .Savings .HappyMobile .text3 {
     color: #402687;
@@ -1299,6 +1349,7 @@ li.tape:before{
     padding-left: 145px;
     text-transform: none;
     margin-top: 10px;
+    /*padding-left: 40vw;*/
   }
   .Savings .HappyMobile .text2 span {
       font-size: 18px;
@@ -1444,7 +1495,7 @@ li.tape:before{
 }
 
 #isi strong.emphasis {
-    color:  #008bac;
+    color:  #000;
 }
 #isi .reference {
     font-size: 12px!important;

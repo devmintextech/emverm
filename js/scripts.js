@@ -276,6 +276,10 @@ function validateChecks (btn) {
 	
 }
 
+function goToUrl(url){
+    window.open(url);
+}
+
 function validateThisCheck (theCheck) {
 	
 	var btn = document.getElementById("download-button");
