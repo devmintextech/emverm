@@ -519,7 +519,7 @@ button.main-callout {
   font-weight: bold;
 }
 .icon-spacer {
-  padding-left: 75px;
+  /*padding-left: 75px;*/
 }
 li.flashlight:before{
   background-image: url('../images/Flashlight.png');
@@ -1849,7 +1849,7 @@ div#up {position: fixed; left: 50%; margin-left: -30px; top: 0; height: 30px; wi
     display:none;
   }
 .numbers{
-  height: 65px;
+  /*height: 65px;*/
   min-height: 65px;
   font-family: Arial;
   font-size: 20px;
@@ -1858,8 +1858,8 @@ div#up {position: fixed; left: 50%; margin-left: -30px; top: 0; height: 30px; wi
   padding-left: 70px;
   line-height: 25px;
   background-repeat: no-repeat;
-  background-position: -70px center;
-  display: table-cell;
+  background-position: 0 0;
+  margin-bottom: 30px;
   vertical-align: middle;
 }
 .number-1{
