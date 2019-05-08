@@ -1312,44 +1312,123 @@ span.center.extra-space {
 	margin-top: 20px;
 }
 
-@media (max-width: 568px) {
+@media (min-width: 568px) and (max-width:990px){
+  
 	.Savings .HappyMobile {
     width: 100%;
-    background-size:100%;
+    background-size: 100%;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 80px;
     text-align: right;
-    padding: 180px 10px 0px 0px;
-	  /*padding: 90px 0px 0px 110px;*/
+    /* padding: 180px 10px 0px 0px; */
+    /* padding: 90px 0px 0px 110px; */
+    padding-top: 30px;
+    height: 270px;
+    padding-right: 0;
+  }
+  .text-container{
+    text-align: left;
+    padding-left: 50%;
+  }
+  .two-text-container{
+    margin-top: 60px;
   }
   .Savings .HappyMobile .text1 {
     color: #008bac;
-    font-size: 15px;
-    line-height: 15px;
-    margin-top: -110px;
+    font-size: 29px;
+    line-height: 29px;
+    /* margin-top: -110px; */
     text-align: left;
-    padding-left: 145px;
-    /*padding-left: 40vw;*/
+    /* padding-left: 145px; */
+    /* padding-left: 40vw; */
+    display: inline-block;
   }
 	.Savings .HappyMobile .text2 {
     color: #402687;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 76px;
+    line-height: 66px;
     text-align: left;
-    padding-left: 230px;
-    margin-top: -38px;
-    /*padding-left: 61vw;*/
+    /* padding-left: 230px; */
+    /* margin-top: -38px; */
+    /* padding-left: 61vw; */
+    display: inline-block;
   }
   .Savings .HappyMobile .text3 {
     color: #402687;
-    font-size: 7px;
-    line-height: 7px;
+    font-size: 12px;
+    line-height: 12px;
     padding-top: 0px;
     text-align: left;
-    padding-left: 145px;
+    /* padding-left: 145px; */
     text-transform: none;
+    margin-top: 5px;
+    /* padding-left: 40vw; */
+  }
+  .Savings .HappyMobile .text2 span {
+      font-size: 28px;
+      vertical-align: top;
+      line-height: 22px;
+  }
+  .Savings .HappyMobile .text1 span {
+      font-size: 50px;
+  }
+	.Savings h1.headline {
+    padding-top: 10px;
+    width: auto;
+    margin-top: 20px;
+	}
+}
+
+@media (max-width: 568px) {
+	.Savings .HappyMobile {
+    width: 100%;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: right;
+    /* padding: 180px 10px 0px 0px; */
+    /* padding: 90px 0px 0px 110px; */
+    padding-top: 30px;
+    height: 130px;
+    padding-right: 0;
+  }
+  .text-container{
+    text-align: left;
+    padding-left: 50%;
+  }
+  .two-text-container{
     margin-top: 10px;
-    /*padding-left: 40vw;*/
+  }
+  .Savings .HappyMobile .text1 {
+    color: #008bac;
+    font-size: 12px;
+    line-height: 12px;
+    /* margin-top: -110px; */
+    text-align: left;
+    /* padding-left: 145px; */
+    /* padding-left: 40vw; */
+    display: inline-block;
+  }
+	.Savings .HappyMobile .text2 {
+    color: #402687;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    /* padding-left: 230px; */
+    /* margin-top: -38px; */
+    /* padding-left: 61vw; */
+    display: inline-block;
+  }
+  .Savings .HappyMobile .text3 {
+    color: #402687;
+    font-size: 6px;
+    line-height: 6px;
+    padding-top: 0px;
+    text-align: left;
+    /* padding-left: 145px; */
+    text-transform: none;
+    margin-top: 5px;
+    /* padding-left: 40vw; */
   }
   .Savings .HappyMobile .text2 span {
       font-size: 18px;
@@ -1357,7 +1436,7 @@ span.center.extra-space {
       line-height: 22px;
   }
   .Savings .HappyMobile .text1 span {
-      font-size: 25px;
+      font-size: 22px;
   }
 	.Savings h1.headline {
     padding-top: 10px;
