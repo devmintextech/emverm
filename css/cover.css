@@ -724,8 +724,42 @@ li.tape:before{
     .cta-3:hover {
       background-position: 0 0;
     }
+    .text-u{
+      text-decoration: underline;
+    }
+    .margin-top-0{
+      margin-top: 0;
+    }
+    @media screen and (max-width:568px){
+      h1.headline.mobile-padding-top-0{
+        padding-top: 0;
+      }
+    }
+    .margin-top-70{
+      margin-top: 70px;
+    }
     .references-container{
       padding-top: 40px;
+    }
+    @media screen and (max-width:568px){
+      .references.mobile-reference-hide{
+        display: none;
+      }
+    }
+    .footnote{
+      margin-top: 25px;
+    }
+    .emverm-hanging{
+      position: absolute;
+      width: 10px;
+      left: 3px;
+      text-align: right;
+    }
+    .emverm-suptext{
+      font-size: 70%;
+      vertical-align: super;
+      top: 2px;
+      line-height: 0;
     }
     .references {
       font-family: Arimo;
